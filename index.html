@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Shaharan Aslam Ali | Portfolio</title>
+  </head>
+  <body>
+
+    <header> <!--Container tag-->
+      <h1>Shaharan Aslam Ali</h1>
+      <p class="tagline">B.Tech CSE Student | Interested in Data Analytics, Artificial Intelligence and Web Development. Let's connect and collaborate!</p>
+      <div class="header-buttons">
+        <a href="#contact-me" class="btn btn-primary">Get in touch</a>
+        <a href="#work-exp" class="btn btn-outline">View Experience</a>
+            
+      </div>
+    </header>
+    
+    <main> <!--Container tag-->
+      
+      <nav> <!--Container tag-->
+        <div class="container nav-inner">
+        <a href="#" class="logo">Portfolio</a>
+          
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work-exp">Work Experience/Internships</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- Mandatory sections below-->
+        <li><a href="#contact-me">Contact Me</a></li>
+        <li><a href="#admin-login" onClick="showAdminLogin()">Admin Login</a></li>
+      </ul>
+          <button id="toggle-theme">Toggle Theme</button>
+        </div>
+      </nav>
+
+      <section id="education" class="section-blocks"> <!--Container tag-->
+        
+      <div class="container">
+
+        <div class="section-heading">
+        <h2 id="edu">Education</h2>
+        </div>
+
+        <div class="section-list">
+          
+        <div class="section-item"><!--Container tag-->
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p class="item-place">Ballarpur Institute of Technology, Ballarpur</p>
+          <p class="item-year">2023 - 2027</p>
+        </div> <!--Class "section-list" is ending-->
+
+        <div class="section-item"><!--Container tag-->
+          <h3>Higher Secondary Education (12th)</h3>
+          <p class="item-place">Maharashtra State Board</p>
+          <p class="item-year">Completed</p>
+        </div> <!--Class "section-list" is ending-->
+
+        <div class="section-item"><!--Container tag-->
+          <h3>Secondary School Education (10th)</h3>
+          <p class="item-place">Maharashtra State Board</p>
+          <p class="item-year">Completed</p>
+        </div> <!--Class "section-list" is ending-->
+          
+      </div> <!--Class "section-item" is ending-->
+
+      </div> <!-- Class "container" is ending>-->
+
+      </section>
+
+
+      <section id="work-exp" class="section-blocks"> <!--Container tag-->
+        
+        <div class="container">
+          
+        <div class="section-heading">
+        <h2>Training & Certifications</h2>
+        </div>
+
+        <div class="section-list">
+          
+        <div class="section-item"><!--Container tag-->
+          <h3>Full Stack Development</h3>
+          <p class="item-place">Adyapan - Currently Learning</p>
+          <p class="item-year">Ongoing</p>
+        </div>
+
+        <div class="section-item"><!--Container tag-->
+          <h3>Tata GenAI Powered Data Analytics Job Simulation</h3>
+          <p class="item-place">Forage</p>
+          <p class="item-year">Completed</p>
+        </div>
+
+        <div class="section-item"><!--Container tag-->
+          <h3>AI Tools Workshop</h3>
+          <p class="item-place">Be10x</p>
+          <p class="item-year">Completed</p>
+        </div>
+          
+        </div>
+          
+      </div>
+      </section>
+
+
+      <!-- Projects Section -->
+
+      <section id="projects" class="section-blocks">
+        
+        <div class="container">
+          
+        <div class="section-heading">
+        <h2>Projects</h2>
+        </div>
+
+        <div class="section-list">
+          
+        <div class="section-item"><!--Container tag-->
+          <h3>ScamShield.AI</h3>
+          <p class="item-place">A project focused on identifying suspicious links and highlighting potential online scam risks.</p>
+        </div>
+
+        
+        <div class="section-item"><!--Container tag-->
+          <h3>SEVA-AI</h3>
+          <p class="item-place">A collaborative AI-based government assistance project.</p>
+        </div>
+          
+        </div>
+          
+      </div>
+      </section>
+
+      <!--Contact me, Admin login and user responses section will be common for everyone!-->
+
+      <!--Contact me-->
+      <section id="contact-me"> <!--Container tag-->
+        <h2>Contact Me</h2>
+        <!--Form validation-->
+        <form id="contact-form">
+          <div>
+          <label>Name:</label>
+          <input id="name_input" type="text" required>
+          </div>
+
+          <div>
+          <label>Email:</label>
+          <input id="email_input" type="email" placeholder="example@email.com" required>
+          </div>
+
+          <div>
+          <label>Message:</label>
+          <textarea id="msg_input" required></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <!--Admin Login-->
+<section id="admin-login"> <!--Container tag-->
+  <h2>Admin Login</h2>
+  
+  <!--Form validation-->
+  <form id="admin-login-form">
+    <div>
+      <label>Username:</label>
+      <input type="text" id="username_input" required>
+    </div>
+
+    <div>
+      <label>Password:</label>
+      <input type="password" id="password_input" required>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="user-responses">
+  <h2>User Responses</h2>
+
+  <div id="user-messages">
+  </div>
+
+</section>
+      
+    </main>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
 
